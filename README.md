@@ -30,7 +30,7 @@ First, get the prerequisite [Clover Bootloader](https://sourceforge.net/projects
 
 On a Mac, you will be performing the following steps (actually twice, when making your SSD bootable):
 
-1. Install Clover to the target drive (USB Stick) using these options:
+1. Install Clover to the target drive (USB Stick or SSD) using these options:
   * Change Install Location to the target drive (DO NOT FORGET THIS!!!!)
   * Customize, with only the following checked:
     * Install for UEFI booting only
