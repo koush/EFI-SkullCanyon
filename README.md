@@ -13,8 +13,8 @@ Additionally, someone using this repository can stay up to date with my changes 
 ### My Hackintosh Hardware
 
 * [Intel Skull Canyon NUC](https://www.amazon.com/Intel-NUC-Kit-NUC6i7KYK-Mini/dp/B01DJ9XS52)
-* 32 GB RAM
-* [Samsung 960 EVO Series - 1TB PCIe NVMe - M.2 Internal SSD](http://amzn.to/2jaw6uR) <sup>[5]</sup>
+* [32GB Kingstom RAM (16GBx2)](https://www.amazon.com/gp/product/B01BNJL8I4/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
+* [Samsung 850 EVO Series - 512GB PCIe SSD - M.2 Internal SSD](https://www.amazon.com/gp/product/B00TGIW1XG/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
 
 ### macOS Boot USB and BIOS Update Preparation (Optional)
 
