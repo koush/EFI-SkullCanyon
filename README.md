@@ -16,7 +16,7 @@ Additionally, someone using this repository can stay up to date with my changes 
 
 ## macOS Installable USB
 
-Use createinstallmedia on another Mac to make a installable macOS USB.
+Use createinstallmedia on another Mac to make a installable macOS USB. Change the paths in the command below, accordingly.
 
 ```
 sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/USBStick/ --applicationpath /Applications/Install\ macOS\ Sierra.app
