@@ -56,3 +56,6 @@ git clone https://github.com/koush/EFI-SkullCanyon.git EFI
 2. Install it.
 3. Wait for it to boot into your new Mac.
 4. Repeat the steps to make your USB Stick bootable on your SSD (to make that bootable). But this time, you can do it from your new Mac.
+
+## Credits
+[RehabMan Guide](https://www.tonymacx86.com/threads/guide-intel-skylake-nuc6-and-skull-canyon-using-clover-uefi-nuc6i5syk-nuc6i7kyk-etc.207848/)
