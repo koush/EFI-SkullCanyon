@@ -22,13 +22,13 @@ Use createinstallmedia on another Mac to make a installable macOS USB. Change th
 sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/USBStick/ --applicationpath /Applications/Install\ macOS\ Sierra.app
 ```
 
-### Make your USB Stick bootable
+### Make your drive bootable
 
 This EFI directory lives on an ESP (EFI System Partition). This partition is typically hidden from operating systems.
 
 First, get the prerequisite [Clover Bootloader](https://sourceforge.net/projects/cloverefiboot/files/Installer/) (I am using r4049 at time of writing).
 
-On a Mac, you will be performing the following steps (actually twice, when making your SSD bootable):
+On a Mac, you will be performing the following steps. Actually, twice. Once to make the USB Install Stick bootable, and again later to make your final Mac system drive bootable.
 
 1. Install Clover to the target drive (USB Stick or SSD) using these options:
   * Change Install Location to the target drive (DO NOT FORGET THIS!!!!)
