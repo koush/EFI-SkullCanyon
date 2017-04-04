@@ -14,6 +14,45 @@ Additionally, someone using this repository can stay up to date with my changes 
 * [32GB Kingstom RAM (16GBx2)](https://www.amazon.com/gp/product/B01BNJL8I4/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
 * [Samsung 850 EVO Series - 512GB PCIe SSD - M.2 Internal SSD](https://www.amazon.com/gp/product/B00TGIW1XG/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1)
 
-## Installation
-Here is general instructions on how to create install macOS to your computer.
-https://github.com/koush/EFI-X99/blob/master/README.md
+## macOS Installable USB
+
+Use createinstallmedia on another Mac to make a installable macOS USB.
+
+```
+sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/USBStick/ --applicationpath /Applications/Install\ macOS\ Sierra.app
+```
+
+### Make your USB Stick bootable
+
+This EFI directory lives on an ESP (EFI System Partition). This partition is typically hidden from operating systems.
+
+First, get the prerequisite [Clover Bootloader](https://sourceforge.net/projects/cloverefiboot/files/Installer/) (I am using r3949 at time of writing).
+
+On a Mac, you will be performing the following steps (actually twice, when making your SSD bootable):
+
+1. Install Clover to the target drive (USB Stick) using these options:
+  * Change Install Location to the target drive (DO NOT FORGET THIS!!!!)
+  * Customize, with only the following checked:
+    * Install for UEFI booting only
+    * Install Clover in the ESP.
+    * Don't delete the Clover PKG file when the installation ends, you may need it later.
+2. After installation of Clover is complete, the installer leaves the ESP mounted.
+3. In that ESP, there will be an EFI directory. So typically, the directory structure will be as follows _/Volumes/ESP/EFI_.
+4. In Terminal:
+```sh
+cd /Volumes/ESP/
+# Clover already creates an EFI directory with some files.
+# Wipe this out to overwrite with the EFI from this respository.
+rm -rf EFI
+# check out this EFI
+git clone https://github.com/koush/EFI-X99.git EFI
+# If you chose a different processor, modify the aforementioned file in VoodooTSCSync.kext.
+# Exit the Terminal and unmount ESP in Finder.app. 
+```
+(You'll need to do this again on your SSD later)
+
+### Installation
+
+1. Boot off the USB Stick and select Install macOS.
+2. Install it.
+3. Repeat the steps to make your USB Stick bootable, but this time, on your SSD. But this time, you can do it from your new Mac.
