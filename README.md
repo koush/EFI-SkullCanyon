@@ -26,7 +26,7 @@ sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallme
 
 This EFI directory lives on an ESP (EFI System Partition). This partition is typically hidden from operating systems.
 
-First, get the prerequisite [Clover Bootloader](https://sourceforge.net/projects/cloverefiboot/files/Installer/) (I am using r3949 at time of writing).
+First, get the prerequisite [Clover Bootloader](https://sourceforge.net/projects/cloverefiboot/files/Installer/) (I am using r4049 at time of writing).
 
 On a Mac, you will be performing the following steps (actually twice, when making your SSD bootable):
 
