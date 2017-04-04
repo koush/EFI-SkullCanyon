@@ -54,4 +54,5 @@ git clone https://github.com/koush/EFI-SkullCanyon.git EFI
 
 1. Boot off the USB Stick and select Install macOS.
 2. Install it.
-3. Repeat the steps to make your USB Stick bootable, but this time, on your SSD. But this time, you can do it from your new Mac.
+3. Wait for it to boot into your new Mac.
+4. Repeat the steps to make your USB Stick bootable on your SSD (to make that bootable). But this time, you can do it from your new Mac.
