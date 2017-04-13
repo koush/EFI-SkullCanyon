@@ -184,6 +184,8 @@
 		<true/>
 		<key>Secure</key>
 		<false/>
+		<key>DefaultVolume</key>
+		<string>Mac</string>
 		<key>Timeout</key>
 		<integer>5</integer>
 		<key>XMPDetection</key>
